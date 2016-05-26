@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // import {HomeContainer} from './component/home'
-import {NewUserContainer} from './component/newUser'
+// import {NewUserContainer} from './component/newUser'
 
 // const Test = ({data}) => (<h1 className="test"> test 2 ww  {data}</h1>)
 

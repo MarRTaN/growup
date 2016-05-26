@@ -1,19 +1,20 @@
-require("../public/css/home.css")
-require("../public/js/home.js")
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const  NameInput = () => (
+    <div>
+    	    <input type="text" className="input_name" />
+    	    <button className="submit"> submit</button>
+    </div>
+    )
+const Fb = () => (
+    	<button >login with fb </button>
+    )
 const NewUserContainer = () => (
-	<div className="newUser-container">
-		<div className="newUser-head" id="newUser-header">
-			<div className="level-container">
-				<span id="level-number">1</span>
-				LEVEL
-			</div>
-		</div>
-		<div className="body">
-		</div>
-
+	<div className="newUser-containner">
+    	<div className="name"> กรอกชื่อ	</div>
+        <NameInput />	
+        <Fb />
 	</div>
 );
 export {NewUserContainer}
