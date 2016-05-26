@@ -1,4 +1,5 @@
-// require("./node_modules/bootstrap/dist/css/bootstrap.min.css")
+require("../public/css/home.css")
+require("../public/js/home.js")
 import React from 'react';
 import ReactDOM from 'react-dom';
 
