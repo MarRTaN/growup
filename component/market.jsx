@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {ItemContainer} from './itemList.jsx'
+import {PanelContainer} from './panel.jsx' 
 
 const  array = [ ["images/market/tree-icon-3.png", "rose"], 
                 ["images/market/tree-icon-3.png","tree"] ,
@@ -10,8 +12,8 @@ const SellItem = ({url , name}) => (
 );
 const MarketContainer = () => (
 	<div className="market-containner">
-    	<div className="name"> Market </div>
-        {array.map(link => ( <SellItem url={link[0]} name={link[1]}/> ))}	
+    	<ItemContainer array =""/>	
+        <PanelContainer />	
 	</div>
 );
 export {MarketContainer}

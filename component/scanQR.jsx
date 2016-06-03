@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {PanelContainer} from './panel.jsx' 
 
 const CameraQR = () => (
     	<div></div>
@@ -13,6 +14,7 @@ const ScanQRContainer = () => (
     	<div className="name"> Scan QR </div>
         <CameraQR />
         <Capture />
+        <PanelContainer />
 	</div>
 );
 export {ScanQRContainer}
