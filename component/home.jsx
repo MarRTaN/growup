@@ -5,6 +5,7 @@ require("../public/js/findShapeIndex.js")
 require("../public/js/home.js")
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {PanelContainer} from './panel.jsx' 
 
 const HomeContainer = () => (
 	<div className="home-container">
@@ -23,6 +24,7 @@ const HomeContainer = () => (
 		</div>
 		<div className="footer">
 		</div>
+		<PanelContainer />
 	</div>
 );
 

@@ -23,7 +23,9 @@ module.exports = {
 		contentBase: "./public",
 			noInfo: true, //  --no-info option
 			hot: true,
-			inline: true
+			inline: true,
+			port: process.env.PORT,
+			host: process.env.IP
 		},
 	plugins: [
 		new webpack.NoErrorsPlugin()
