@@ -19,3 +19,4 @@ function setFacebookBtn(){
 	$('.fb-button').css({'top':(submitTop+submitHeight+margin+16)+"px"});
 	$('.input-name').css({'top':(submitTop-margin)+"px"});
 }
+module.exports =  setElement;
