@@ -2,15 +2,16 @@ require("./node_modules/bootstrap/dist/css/bootstrap.min.css")
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import {HomeContainer} from './component/home'
- import {NewUserContainer} from './component/newUser'
+ import {HomeContainer} from './component/home'
+// import {NewUserContainer} from './component/newUser' //complete
 // import {ScanQRContainer} from './component/scanQR'
+// import {PanelContainer} from './component/panel'
 // const Test = ({data}) => (<h1 className="test"> test 2 ww  {data}</h1>)
 
 export class App extends React.Component {
 	render() {
 		return (
-			<NewUserContainer />
+			<HomeContainer />
 		);
 	}
 }

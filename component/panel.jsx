@@ -1,21 +1,22 @@
+require("../public/css/panel.css")
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 const ProfileButton = ()=>(
-    <div></div>
+    <div className="panel-button profile"></div>
 );
 const AchievementButton = ()=>(
-    <div></div>
+    <div className="panel-button acheivement"></div>
 );
 const MarketButton = ()=>(
-    <div></div>
+    <div className="panel-button market"></div>
 );
 
 const PanelContainer = () => (
-	<div className="panel-containner">
+	<div className="panel-container">
         <ProfileButton />
-        <AchievementButton />
         <MarketButton />
+        <AchievementButton />
 	</div>
 );
 export {PanelContainer}

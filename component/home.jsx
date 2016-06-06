@@ -22,8 +22,6 @@ const HomeContainer = () => (
 		<div className="body">
 			<Plant />
 		</div>
-		<div className="footer">
-		</div>
 		<PanelContainer />
 	</div>
 );
