@@ -1,6 +1,6 @@
-$(document).ready(function(){
-	setElement();
-});
+// $(document).ready(function(){
+// 	setElement();
+// });
 
 function setElement(){
 	setLogo();
