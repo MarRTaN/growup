@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {PanelContainer} from './panel.jsx' 
+import {PanelContainer} from './panel.jsx'
 
 const CameraQR = () => (
     	<div></div>
