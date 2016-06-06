@@ -12,7 +12,7 @@ import { HomeContainer } from './component/home'
 export class App extends React.Component {
   render () {
     return (
-			<CheckTreeContainer />
+    <CheckTreeContainer />
     )
   }
 }
