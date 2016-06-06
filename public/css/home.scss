@@ -16,16 +16,94 @@ body{
 	background-size: cover;
 	.header{
 		width: 100%;
-		height: 20%;
-		background-color: red;
+		height: 15%;
+		position: absolute;
+		.level-container{
+			color: white;
+			border: 3px solid white;
+			border-radius: 5px;
+			text-align: center;
+			.level-text{
+				height: 20%;
+				width: 100%;
+				padding-top: 15%;
+			}
+			.level-number{
+				padding-top: 5%;
+				width: 100%;
+				height: 80%;
+			}
+		}
+		.plant-name{
+			position: absolute;
+			color: white;
+		}
+		.level-bar-cover{
+			position: absolute;
+			background-color: white;
+			border-radius: 4px;
+			padding: 3px;
+			.level-bar{
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				width: 100%;
+				height: 100%;
+				background-color: #5AAAD6;
+			}
+		}
 	}
 	.body{
+		position: absolute;
+		top: 20%;
 		width: 100%;
 		height: 70%;
+		.left-button, .right-button{
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-size: cover;
+		}
+		.left-button{
+			left: 3%;
+			background-image: url('../images/home/left-btn.png');
+		}
+		.right-button{
+			right: 3%;
+			background-image: url('../images/home/right-btn.png');
+		}
 	}
 	.footer{
+		position: absolute;
+		top: 90%;
 		width: 100%;
 		height: 10%;
-		background-color: red;
 	}
 }
+
+//PLANT
+.plant-canvas{
+	width: 60%;
+	position: absolute;
+	left: 50%;
+	top: 52%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.plant-end{display:none;}
+.plant-demo-01-pot0{fill:#EFEFEF;}
+.plant-demo-01-pot1{fill:#E8E8E8;}
+.plant-demo-01-pot2{fill:#FCFDFF;}
+.plant-demo-01-pot3{fill:#704922;}
+.plant-demo-01-0{fill:#E6E2CC;}
+.plant-demo-01-1{fill:#FFFBE4;}
+.plant-demo-01-2{fill:#DAD99D;}
+.plant-demo-01-3{fill:#A7AE49;}
+.plant-demo-01-4{fill:#DCDB9F;}
+.plant-demo-01-5{fill:#833F24;}
+.plant-demo-01-6{fill:#7E4327;}
+.plant-demo-01-7{fill:#839362;}
+.plant-demo-01-8{fill:#A3A573;}
+.plant-demo-01-9{fill:#A8AC6E;}
+.plant-demo-01-10{fill:#824022;}
+.plant-demo-01-11{fill:#7A8136;}
