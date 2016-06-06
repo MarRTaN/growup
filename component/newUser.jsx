@@ -1,20 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+require('../public/css/newUser.css')
+require('../public/js/newUser.js')
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const  NameInput = () => (
-    <div>
-    	    <input type="text" className="input_name" />
-    	    <button className="submit"> submit</button>
-    </div>
-    )
+const NameInput = () => (
+  <div>
+    <input type="text" className="input-name" placeholder="username" />
+    <button className="submit-button">
+      Login
+    </button>
+  </div>
+)
 const Fb = () => (
-    	<button >login with fb </button>
-    )
+  <button className="fb-button">
+    <div className="fb-logo"></div>
+    Login with Facebook
+  </button>
+)
 const NewUserContainer = () => (
-	<div className="newUser-containner">
-    	<div className="name"> กรอกชื่อ	</div>
-        <NameInput />	
-        <Fb />
-	</div>
-);
-export {NewUserContainer}
+  <div className="new-user-container">
+    <div className="logo"></div>
+    <NameInput />
+    <Fb />
+  </div>
+)
+
+class NewUserPage extends React.Component {
+  componentDidMount () {
+    setElement()
+  }
+  render () {
+    return <NewUserContainer />
+  }
+}
+export { NewUserContainer }
