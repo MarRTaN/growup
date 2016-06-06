@@ -1,19 +1,26 @@
-require("./node_modules/bootstrap/dist/css/bootstrap.min.css")
-import React from 'react';
-import ReactDOM from 'react-dom';
+require('./node_modules/bootstrap/dist/css/bootstrap.min.css')
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Router, Route, Link, browserHistory } from 'react-router'
 
-// import {HomeContainer} from './component/home'
-// import {NewUserContainer} from './component/newUser'
- import {ScanQRContainer} from './component/scanQR'
+import { CheckTreeContainer } from './component/checkTree'
+import { NewUserContainer } from './component/newUser'
+import { ScanQRContainer } from './component/scanQR'
+import { HomeContainer } from './component/home'
 // const Test = ({data}) => (<h1 className="test"> test 2 ww  {data}</h1>)
 
 export class App extends React.Component {
-	render() {
-		return (
-
-			<ScanQRContainer />
-		);
-	}
+  render () {
+    return (
+			<CheckTreeContainer />
+    )
+  }
 }
 
-ReactDOM.render(<App/>, document.querySelector("#myApp"));
+ReactDOM.render((
+  <Router history={browserHistory}>
+    <Route path="/checktree" component={CheckTreeContainer} />
+    <Route path="/home" component={HomeContainer} />
+    <Route path="*" component={HomeContainer} />
+  </Router>
+  ), document.querySelector('#myApp'))
