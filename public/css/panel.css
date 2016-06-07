@@ -1,0 +1,43 @@
+.panel-container {
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  top: 82%;
+}
+
+.panel-container .panel-button {
+  width: 25%;
+  height: 100%;
+  float: left;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.panel-container .profile {
+  margin-left: 7%;
+  margin-right: 6%;
+  background-image: url("../images/panel/profile.png");
+}
+
+.panel-container .profile:hover, .panel-container .profile:active {
+  background-image: url("../images/panel/profile_click.png");
+}
+
+.panel-container .market {
+  margin-right: 6%;
+  background-image: url("../images/panel/shop.png");
+}
+
+.panel-container .market:hover, .panel-container .market:active {
+  background-image: url("../images/panel/shop_click.png");
+}
+
+.panel-container .acheivement {
+  margin-right: 6%;
+  background-image: url("../images/panel/badge.png");
+}
+
+.panel-container .acheivement:hover, .panel-container .acheivement:active {
+  background-image: url("../images/panel/badge_click.png");
+}

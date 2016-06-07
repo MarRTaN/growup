@@ -13,16 +13,7 @@ import { NewtreeAnimationContainer } from './component/newtreeanimation'
 import { AchievementContainer } from './component/achievement'
 import { AchievementItemContainer } from './component/achievementitem'
 import { FriendContainer } from './component/friend'
-// const Test = ({data}) => (<h1 className="test"> test 2 ww  {data}</h1>)
 
-export class App extends React.Component {
-  render () {
-    return (
-    <CheckTreeContainer />
-    )
-  }
-
-}
 
 ReactDOM.render((
   <Router history={browserHistory}>
