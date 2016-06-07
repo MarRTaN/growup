@@ -1,17 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {ItemContainer} from './itemlist.jsx'
-import {PanelContainer} from './panel.jsx'
-const  array = [ ["images/market/tree-icon-3.png", "rose"],
-                ["images/market/tree-icon-3.png","tree"] ,
-                ["images/market/tree-icon-3.png","jasmine"]
-            ]
+import React from 'react'
+import { ItemContainer } from './itemlist.jsx'
+import { PanelContainer } from './panel.jsx'
 
 const FriendContainer = () => (
-	<div className="achieve-containner">
-  frind
-        <ItemContainer array = {array}/>
-        <PanelContainer />
-	</div>
-);
-export { FriendContainer}
+  <div className="achieve-containner">
+    frind
+  </div>
+)
+// <ItemContainer />
+// <PanelContainer />
+export { FriendContainer }
