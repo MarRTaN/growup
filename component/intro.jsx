@@ -1,22 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-const  array = [ "images/market/tree-icon-3.png", 
-                "images/market/tree-icon-3.png",
-                "images/market/tree-icon-3.png"
-            ]
-const IntroSlide = (url) => (
-    <img src={url}  />
-);
-const Spot = ()=>(
-    <div></div>
-);
+import React from 'react'
+import { Slide } from './_slide'
+import {Link} from 'react-router'
+const Intro = () => (
+  <img src='images/market/tree-icon-3.png' />
+)
+const Button = () => (
+  <div >
+  <button className='next'>
+      next
+  </button>
+  <button className='skip'>
+      <Link to='/newuser'>skip</Link>
+  </button>
+  </div>
+)
+const IntroSlide = Slide(Intro)
 const IntroContainer = () => (
-	<div className="intro-containner">
-        {array.map(link => ( <IntroSlide url={link} /> ))}
-        <LeftSlide />
-        <Spot />
-        <RightSlide />
-	</div>
-);
-export {IntroContainer}
+  <div>
+    <IntroSlide />
+    <Button />
+  </div>
+)
+export { IntroContainer }

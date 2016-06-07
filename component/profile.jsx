@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {PanelContainer}  from './panel'
 
 const Profilepic=()=>(
     <div>
@@ -29,6 +30,8 @@ const ProfileContainer=()=>(
     <div className="profile-containner">
         <Profilepic />
         <Profile />
+        <PanelContainer />
 	</div>
     );
 export { ProfileContainer}
+

@@ -1,0 +1,13 @@
+.item-containner{
+  img {
+    width: 100%;
+
+  }
+  .item{
+    margin-left: 2.5%;
+    width: 30%;
+    display: inline-flex;
+    flex-direction:column ;
+    flex-wrap:wrap ;
+  }
+}
