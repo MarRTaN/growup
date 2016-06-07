@@ -1,0 +1,7 @@
+description : "เมล็ดพันธุ์ต้นหอม"
+img : "http://www.gourmetsleuth.com/images/default-source/dictionary/scallion-green-onion.jpg"
+name : "Scallion seed"
+price : 30
+stock : 30
+type : "seed"
+weight : 15
