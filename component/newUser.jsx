@@ -1,5 +1,5 @@
 require('../public/css/newUser.css')
-const setElement = require('../public/js/newUser.js')
+const setElement = require('../public/js/newUser.js').setElement
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -26,13 +26,12 @@ const NewUserContainer = () => (
 )
 
 class NewUserPage extends React.Component {
-  componentWillMount () {
-  }
   componentDidMount () {
     setElement()
   }
+
   render () {
     return <NewUserContainer />
   }
 }
-export { NewUserPage  }
+export { NewUserPage }
