@@ -1,10 +1,11 @@
+require('../public/css/itemlist.scss')
 import React from 'react'
 // import ReactDOM from 'react-dom'
 
 const Item = ({url, name}) => (
-  <div>
-    {name}
-    <img src={url} alt={name} width="50 %"/>
+  <div className="item">
+    <img src={url} alt={name} width="50 %" />
+    <div className="figure"> {name} </div>
   </div>
 )
 const ItemContainer = ({items}) => (
@@ -12,7 +13,7 @@ const ItemContainer = ({items}) => (
     <div className="name">
       item container
     </div>
-    {items.map( (item, i) => (<Item url={item.img} name={item.name}> </Item>) )}
+    {items.map((item, i) => (<Item key={i} url={item.url} name={item.name} />))}
   </div>
 )
 export { ItemContainer }

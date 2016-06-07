@@ -17,12 +17,24 @@ const MarketButton = () => (
   <div className="panel-button market"></div>
   </Link>
 )
+const HomeButton = () => (
+  <Link to='/home'>
+  <div className="panel-button home"></div>
+  </Link>
+)
+const FriendButton = () => (
+  <Link to='/friend'>
+  <div className="panel-button friend"></div>
+  </Link>
+)
 
 const PanelContainer = () => (
   <div className="panel-container">
     <ProfileButton />
     <MarketButton />
     <AchievementButton />
+    <HomeButton />
+    <FriendButton />
   </div>
 )
 export { PanelContainer }

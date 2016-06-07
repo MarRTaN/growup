@@ -29,9 +29,10 @@ class MarketPage extends React.Component {
       .then(response => response.json())
       .then(items => {
         console.log('gettted')
+        items = items.map(item => ({url: item.img, name: (item.name + ',' + item.price)}))
         this.setState({items})
       })
-    // this.state.items  = [1,2,4]
+  // this.state.items  = [1,2,4]
   }
 
   render () {
