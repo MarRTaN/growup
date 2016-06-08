@@ -1,32 +1,41 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Link } from 'react-router'
+require('../public/css/checkTree.css')
+const setElement = require('../public/js/checkTree.js')
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const BuyTree = () => (
-  <button>
-    <Link to= "/market"> ซื้อต้นไม้
-    </Link>
-  </button>
-)
+    	<button className="buy-button">
+          Buy a tree
+        </button>
+    )
 const HaveTree = () => (
-  <button>
-    <Link to= "/scanqr">มีต้นไม้แล้ว
-      </Link>
-  </button>
-)
+    	<button className="have-button">
+          I have a tree
+        </button>
+    )
 const Skip = () => (
-  <button>
-      <Link to="/home">ข้าม
-        </Link>
-  </button>
-)
+    	<button className="skip-button">
+          Skip
+        </button>
+    )
 const CheckTreeContainer = () => (
-  <div className="checkTree-containner">
-    <div className="name">
-      มีต้นไม้หรือไม่?
-    </div>
-    <BuyTree />
-    <HaveTree />
-    <Skip />
-  </div>
-)
-export { CheckTreeContainer }
+	<div className="check-tree-container">
+    	<div className="name"> มีต้นไม้หรือไม่?	</div>
+        <BuyTree />	
+        <HaveTree />
+        <Skip />
+	</div>
+);
+
+class CheckTreePage extends React.Component {
+  componentWillMount () {
+  }
+  componentDidMount () {
+    setElement()
+  }
+  render () {
+    return <CheckTreeContainer />
+  }
+}
+
+export {CheckTreePage}
