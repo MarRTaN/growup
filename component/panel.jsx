@@ -32,8 +32,8 @@ const PanelContainer = () => (
   <div className="panel-container">
     <ProfileButton />
     <MarketButton />
-    <AchievementButton />
     <HomeButton />
+    <AchievementButton />
     <FriendButton />
   </div>
 )

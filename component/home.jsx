@@ -1,13 +1,12 @@
 require('../public/css/home.scss')
-require('../public/js/TweenMax.min.js')
-require('../public/js/MorphSVGPlugin.min.js')
-require('../public/js/findShapeIndex.js')
-require('../public/js/home.js')
+
+const  setElement = require('../public/js/home.js')
 import React from 'react'
 import { PanelContainer } from './panel.jsx'
 import { PlantDemo01 } from './_plantdemo01'
 import { Slide } from './_slide'
 
+const Plant = Slide(PlantDemo01)
 const HomeContainer = () => (
   <div className="home-container">
     <div className="header">
@@ -32,7 +31,28 @@ const HomeContainer = () => (
     <PanelContainer />
   </div>
 )
+class HomePage extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      items: []
+    }
+  }
+  componentDidMount () {
+    setElement()
+    // fetch('https://growupapp.firebaseio.com/Product.json')
+    //   .then(response => response.json())
+    //   .then(items => {
+    //     console.log('gettted')
+    //     items = items.map(item => ({url: item.img, name: (item.name + ',' + item.price)}))
+    //     this.setState({items})
+    //   })
+  // this.state.items  = [1,2,4]
+  }
 
+  render () {
+    return (<HomeContainer  />)
+  }
+}
 
-const Plant = Slide(PlantDemo01)
-export { HomeContainer }
+export { HomePage }

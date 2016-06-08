@@ -1,6 +1,9 @@
-$(document).ready(function(){
-	setElement();
-});
+// $(document).ready(function(){
+// 	setElement();
+// });
+require('./TweenMax.min.js')
+require('./MorphSVGPlugin.min.js')
+require('./findShapeIndex.js')
 
 function setElement(){
 	setLevelContainer();
@@ -62,3 +65,4 @@ function setPlant(){
 		TweenMax.to("#plant-demo-01-"+i+"-start",1,{morphSVG:{shape:"#plant-demo-01-"+i+"-end",shapeIndex:"auto"}, repeat:-1, yoyo:true});
 	}
 }
+module.exports = setElement;
