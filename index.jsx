@@ -2,10 +2,9 @@ require('./node_modules/bootstrap/dist/css/bootstrap.min.css')
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, Link, browserHistory } from 'react-router'
-
-import { CheckTreePage } from './component/checkTree'
-import { NewUserPage } from './component/newUser' //complete
-import { HomeContainer } from './component/home'
+import { CheckTreeContainer } from './component/checktree'
+import { NewUserPage } from './component/newuser'
+import { HomePage } from './component/home'
 import { IntroContainer } from './component/intro'
 import { MarketPage } from './component/market'
 import { ScanQRContainer } from './component/scanqr'
@@ -18,11 +17,12 @@ import { TreeProfileContainer } from './component/treeprofile'
 
 ReactDOM.render((
   <Router history={browserHistory}>
-    <Route path="/checktree" component={CheckTreePage} />
-    <Route path="/home" component={HomeContainer} />
+    <Route path="/checktree" component={CheckTreeContainer} />
+    <Route path="/home" component={HomePage} />
     <Route path="/intro" component={IntroContainer} />
     <Route path="/newuser" component={NewUserPage} />
-    <Route path="/market" component={MarketContainer} />
+    <Route path="/checktree" component={CheckTreeContainer} />
+    <Route path="/market" component={MarketPage} />
     <Route path="/scanqr" component={ScanQRContainer} />
     <Route path="/newtreeanimation" component={NewtreeAnimationContainer} />
     <Route path="/achievement" component={AchievementPage} />
