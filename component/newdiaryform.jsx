@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link } from 'react-router'
 
 const NewDiaryHead=()=>(
     <div className="diary-head">
@@ -10,6 +11,12 @@ const NewDiaryHead=()=>(
 const NewDiaryText=()=>(
     <div className="diary-text-form">
         <input type="text" className="diary-input" placeholder="Diary Today" />
+        <button className="submit-button">
+            <Link to='newdiaryadded'> submit</Link>
+        </button>
+        <button className="cancel-button">
+            <Link to='treeprofile'>cancel</Link>
+        </button>
     </div>
     );
 const NewDiaryContainer=()=>(

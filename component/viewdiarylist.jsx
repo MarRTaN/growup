@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link } from 'react-router'
 
 const Diary = (date) => (
   <div className="diary">
-    <div className="diary-time"> {date} </div>
+    <Link to='viewdiary'><div className="diary-time"> {date} </div></Link>
   </div>
 )
 

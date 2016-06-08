@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Link } from 'react-router'
 
 const TreePic=()=>(
     <div>
@@ -29,13 +30,13 @@ const Treeinfo=()=>(
 
 const ViewTreediary=()=>(
     <button className="view-tree-diary">
-        View Tree Diary
+        <Link to='viewdiarylist'>View Tree Diary</Link>
     </button>
     );
 
 const NewTreediary=()=>(
     <button className="new-tree-diary">
-        New Tree Diary
+        <Link to='newdiary'>New Tree Diary</Link>
     </button>
     );
     
