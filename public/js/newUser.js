@@ -1,6 +1,7 @@
 // $(document).ready(function(){
 // 	setElement();
 // });
+var $ = require('./jquery.js')
 
 function setElement(){
 	setLogo();
