@@ -36,7 +36,7 @@ const Profile = ({user}) => (
 
 const ProfileContainer = ({user}) => (
   <div className="profile-containner">
-    <Profile  user={user}/>
+    <Profile user={user} />
     <Profilepic />
     <Logout />
     <PanelContainer />
@@ -47,7 +47,7 @@ class profilePage extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      user : { profilename :  "avd"}
+      user: { profilename: 'avd'}
     }
   }
   componentWillMount () {}
@@ -58,4 +58,4 @@ class profilePage extends React.Component {
   }
 }
 
-export { ProfileContainer }
+export { profilePage }
