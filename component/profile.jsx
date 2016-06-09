@@ -1,11 +1,14 @@
+require('../public/css/profile.scss')
+
+const  setElement = require('../public/js/profile.js')
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { PanelContainer } from './panel'
 
 const Profilepic = () => (
-  <div>
-    <img src="http://findicons.com/files/icons/170/avatar_girls/128/girl_2.png" />
-    <button className="changepic">
+  <div className="profile-pic">
+    <img src="" />
+    <button className="change-profile-btn">
       change picture
     </button>
   </div>
@@ -26,10 +29,26 @@ const Profile = () => (
 )
 
 const ProfileContainer = () => (
-  <div className="profile-containner">
+  <div className="profile-container">
     <Profile />
     <Profilepic />
     <PanelContainer />
   </div>
 )
-export { ProfileContainer }
+
+class ProfilePage extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      items: []
+    }
+  }
+  componentDidMount () {
+    setElement()
+  }
+
+  render () {
+    return (<ProfileContainer  />)
+  }
+}
+export { ProfilePage }

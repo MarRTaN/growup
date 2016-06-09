@@ -1,12 +1,11 @@
-// $(document).ready(function(){
-// 	setElement();
-// });
+
 require('./TweenMax.min.js')
 require('./MorphSVGPlugin.min.js')
 require('./findShapeIndex.js')
 var $ = require('./jquery.js')
 
 function setElement(){
+	$('.home').toggleClass("home-active");
 	setLevelContainer();
 	setPlantNameContainer();
 	setPlantLevelBar();

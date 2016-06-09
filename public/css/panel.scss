@@ -16,29 +16,37 @@
 		margin-right: 5%;
 		background-image: url('../images/panel/profile.png');
 	}
-	.profile:hover, .profile:active{
+	.profile-active{
 		background-image: url('../images/panel/profile_click.png');
 	}
 	.market{
 		margin-right: 5%;
 		background-image: url('../images/panel/shop.png');
 	}
-	.market:hover, .market:active{
+	.market-active{
 		background-image: url('../images/panel/shop_click.png');
 	}
 	.acheivement{
 		margin-right: 5%;
 		background-image: url('../images/panel/badge.png');
 	}
-	.acheivement:hover, .acheivement:active{
+	.acheivement-active{
 		background-image: url('../images/panel/badge_click.png');
 	}
 	.home{
 		margin-right: 5%;
 		background-image: url('../images/panel/home.png');
 	}
+	.home-active{
+		margin-right: 5%;
+		background-image: url('../images/panel/home_click.png');
+	}
 	.friend{
 		margin-right: 5%;
 		background-image: url('../images/panel/friend.png');
+	}
+	.friend-active{
+		margin-right: 5%;
+		background-image: url('../images/panel/friend_click.png');
 	}
 }
