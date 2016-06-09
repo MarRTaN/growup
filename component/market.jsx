@@ -7,8 +7,7 @@ import { ItemContainer } from './itemlist.jsx'
 import { PanelContainer } from './panel.jsx'
 
 const MarketContainer = ({items}) => (
-  <div className="market-containner">
-    market
+  <div className="market-container">
     <ItemContainer items={items} />
     <PanelContainer />
   </div>

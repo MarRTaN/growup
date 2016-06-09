@@ -5,14 +5,12 @@ import React from 'react'
 const Item = ({url, name}) => (
   <div className="item">
     <img src={url} alt={name} width="50 %" />
-    <div className="figure"> {name} </div>
+    <div className="name"> {name.split(',')[0]}</div>
+    <div className="price">{name.split(',')[1]} ฿ </div>
   </div>
 )
 const ItemContainer = ({items}) => (
   <div className="item-containner">
-    <div className="name">
-      item container
-    </div>
     {items.map((item, i) => (<Item key={i} url={item.url} name={item.name} />))}
   </div>
 )
