@@ -1,4 +1,4 @@
-import orderBy from 'lodash/orderby'
+//import orderBy from 'lodash/orderby'
 // import sortedIndex from 'lodash/sortedIndex'
 const rule = [
   {
@@ -39,7 +39,8 @@ const lvl = (rule, score) => {
 }
 
 const check = score => {
-  const orderRule = orderBy(rule, 'score')
+  //const orderRule = orderBy(rule, 'score')
+  const orderRule=rule
   // console.log(orderRule)
   const level = lvl(orderRule, score)
   // console.log('lvl:', level)
