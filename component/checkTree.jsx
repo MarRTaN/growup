@@ -1,5 +1,5 @@
-require('../public/css/checkTree.css')
-const setElement = require('../public/js/checkTree.js')
+require('../public/css/checktree.scss')
+const setElement = require('../public/js/checktree.js')
 import React from 'react';
 import ReactDOM from 'react-dom';
 
