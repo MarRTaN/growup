@@ -1,3 +1,6 @@
+require('../public/css/acheive.scss')
+
+const  setElement = require('../public/js/acheive.js')
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ItemContainer } from './itemlist.jsx'
@@ -18,6 +21,7 @@ class AchievementPage extends React.Component {
     }
   }
   componentDidMount () {
+    setElement()
     fetch('https://growupapp.firebaseio.com/Achievement.json')
       .then(response => response.json())
       .then(items => {

@@ -1,19 +1,24 @@
 require('./node_modules/bootstrap/dist/css/bootstrap.min.css')
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, browserHistory } from 'react-router'
 
+<<<<<<< HEAD
 import { CheckTreePage } from './component/checkTree'
 import { NewUserPage } from './component/newuser' //complete
+=======
+import { CheckTreePage } from './component/checktree'
+import { NewUserPage } from './component/newuser' // complete
+>>>>>>> 4c99cdb95753d4a158858c328e0b46420e83385f
 import { HomePage } from './component/home'
 import { IntroContainer } from './component/intro'
 import { MarketPage } from './component/market'
 import { ScanQRContainer } from './component/scanqr'
 import { NewtreeAnimationContainer } from './component/newtreeanimation'
 import { AchievementPage } from './component/achievement'
-import { AchievementItemContainer } from './component/achievementitem'
+import { AchievementItemPage } from './component/achievementitem'
 import { FriendContainer } from './component/friend'
-import { ProfileContainer } from './component/profile'
+import { ProfilePage } from './component/profile'
 import { TreeProfileContainer } from './component/treeprofile'
 import { NewDiaryAddedContainer } from './component/newdiaryadded'
 import { NewDiaryContainer } from './component/newdiaryform'
@@ -33,9 +38,9 @@ ReactDOM.render((
     <Route path="/scanqr" component={ScanQRContainer} />
     <Route path="/newtreeanimation" component={NewtreeAnimationContainer} />
     <Route path="/achievement" component={AchievementPage} />
-    <Route path="/achievements" component={AchievementItemContainer} />
+    <Route path="/achievements" component={AchievementItemPage} />
     <Route path="/friend" component={FriendContainer} />
-    <Route path="/profile" component={ProfileContainer} />
+    <Route path="/profile" component={ProfilePage} />
     <Route path="/treeprofile" component={TreeProfileContainer} />
     <Route path="/newdiaryadded" component={NewDiaryAddedContainer} />
     <Route path="/newdiary" component={NewDiaryContainer} />
@@ -45,6 +50,5 @@ ReactDOM.render((
     <Route path="/friendprofile" component={FriendProfileContainer} />
     <Route path="/newtree" component={NewTreeContainer} />
     <Route path="*" component={HomePage} />
-
   </Router>
   ), document.querySelector('#myApp'))

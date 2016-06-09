@@ -1,3 +1,6 @@
+require('../public/css/market.scss')
+
+const  setElement = require('../public/js/market.js')
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ItemContainer } from './itemlist.jsx'
@@ -18,6 +21,7 @@ class MarketPage extends React.Component {
     }
   }
   componentDidMount () {
+    setElement()
     fetch('https://growupapp.firebaseio.com/Product.json')
       .then(response => response.json())
       .then(items => {

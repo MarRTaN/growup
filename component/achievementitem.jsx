@@ -1,3 +1,6 @@
+require('../public/css/acheive.scss')
+
+const  setElement = require('../public/js/acheive.js')
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {ItemContainer} from './itemlist.jsx'
@@ -15,4 +18,21 @@ const AchievementItemContainer = () => (
         <PanelContainer />
 	</div>
 );
-export { AchievementItemContainer}
+
+class AchievementItemPage extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      items: []
+    }
+  }
+  componentDidMount () {
+    setElement()
+  }
+
+  render () {
+    return (<AchievementItemContainer  />)
+  }
+}
+
+export { AchievementItemPage }

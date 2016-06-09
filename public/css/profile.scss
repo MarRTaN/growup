@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+}
+
+.profile-container{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url('../images/profile/BG.png');
+	background-size: cover;
+	.profile-pic{
+		background-color: white;
+		width: 45%;
+		overflow: hidden;
+		transform: translateX(-50%);
+		position: absolute;
+		left: 50%;
+		top: 10%;
+		img{
+			width: 102%;
+			height: 102%;
+			background-image: url('../images/profile/profile-demo.jpg');
+			background-size: cover;
+			position: absolute;
+			left: -1%;
+			top: -1%;
+		}
+		.change-profile-btn{
+			width: 105%;
+			height: 105%;
+			border-radius: 52%;
+			background-color: rgba(0,0,0,0.5);
+			position: absolute;
+			left: -2%;
+			top: -2%;
+			opacity: 0;
+			color: white;
+
+		}
+	}
+}
