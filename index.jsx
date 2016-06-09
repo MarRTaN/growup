@@ -1,10 +1,10 @@
 require('./node_modules/bootstrap/dist/css/bootstrap.min.css')
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, browserHistory } from 'react-router'
 
-import { CheckTreePage } from './component/checkTree'
-import { NewUserPage } from './component/newUser' //complete
+import { CheckTreePage } from './component/checktree'
+import { NewUserPage } from './component/newuser' // complete
 import { HomePage } from './component/home'
 import { IntroContainer } from './component/intro'
 import { MarketPage } from './component/market'
@@ -41,6 +41,5 @@ ReactDOM.render((
     <Route path="/viewdiary" component={ViewDiaryContainer} />
     <Route path="/viewdiarylist" component={ViewDiaryListContainer} />
     <Route path="*" component={HomePage} />
-
   </Router>
   ), document.querySelector('#myApp'))
