@@ -3,6 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 
+
 import { CheckTreePage } from './component/checktree'
 import { NewUserPage } from './component/newuser' // complete
 import { HomePage } from './component/home'
@@ -20,6 +21,8 @@ import { NewDiaryContainer } from './component/newdiaryform'
 import { NewTreeAnimationContainer } from './component/newtreeanimation'
 import { ViewDiaryContainer } from './component/viewdiary'
 import { ViewDiaryListContainer } from './component/viewdiarylist'
+import { FriendProfileContainer } from './component/friendprofile'
+import { NewTreeContainer } from './component/newtree'
 
 ReactDOM.render((
   <Router history={browserHistory}>
@@ -40,6 +43,8 @@ ReactDOM.render((
     <Route path="/newtreeanimation" component={NewTreeAnimationContainer} />
     <Route path="/viewdiary" component={ViewDiaryContainer} />
     <Route path="/viewdiarylist" component={ViewDiaryListContainer} />
+    <Route path="/friendprofile" component={FriendProfileContainer} />
+    <Route path="/newtree" component={NewTreeContainer} />
     <Route path="*" component={HomePage} />
   </Router>
   ), document.querySelector('#myApp'))
