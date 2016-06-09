@@ -1,5 +1,5 @@
-require('../public/css/newUser.scss')
-const setElement = require('../public/js/newUser.js').setElement
+require('../public/css/newuser.scss')
+const setElement = require('../public/js/newuser.js').setElement
 import React from 'react'
 import ReactDOM from 'react-dom'
 

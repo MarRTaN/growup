@@ -5,9 +5,9 @@ import { Router, Route, Link, browserHistory } from 'react-router'
 
 import { CheckTreePage } from './component/checkTree'
 import { NewUserPage } from './component/newUser' //complete
-import { HomeContainer } from './component/home'
+import { HomePage } from './component/home'
 import { IntroContainer } from './component/intro'
-import { MarketContainer } from './component/market'
+import { MarketPage } from './component/market'
 import { ScanQRContainer } from './component/scanqr'
 import { NewtreeAnimationContainer } from './component/newtreeanimation'
 import { AchievementPage } from './component/achievement'
@@ -24,10 +24,10 @@ import { ViewDiaryListContainer } from './component/viewdiarylist'
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/checktree" component={CheckTreePage} />
-    <Route path="/home" component={HomeContainer} />
+    <Route path="/home" component={HomePage} />
     <Route path="/intro" component={IntroContainer} />
     <Route path="/newuser" component={NewUserPage} />
-    <Route path="/market" component={MarketContainer} />
+    <Route path="/market" component={MarketPage} />
     <Route path="/scanqr" component={ScanQRContainer} />
     <Route path="/newtreeanimation" component={NewtreeAnimationContainer} />
     <Route path="/achievement" component={AchievementPage} />
@@ -41,6 +41,6 @@ ReactDOM.render((
     <Route path="/viewdiary" component={ViewDiaryContainer} />
     <Route path="/viewdiarylist" component={ViewDiaryListContainer} />
     <Route path="*" component={HomePage} />
-    
+
   </Router>
   ), document.querySelector('#myApp'))

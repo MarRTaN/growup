@@ -4,6 +4,7 @@
 require('./TweenMax.min.js')
 require('./MorphSVGPlugin.min.js')
 require('./findShapeIndex.js')
+var $ = require('./jquery.js')
 
 function setElement(){
 	setLevelContainer();
