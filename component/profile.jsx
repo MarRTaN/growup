@@ -20,9 +20,9 @@ const Profilepic = () => (
   </div>
 )
 
-const Profile = () => (
+const Profile = ({user}) => (
   <div>
-    <input type="text" className="input-name" placeholder="profilename" />
+    <input type="text" className="input-name" placeholder={'profilename' + user} />
     <input type="text" className="input-name" placeholder="name" />
     <input type="text" classe="input-name" placeholder="sex" />
     <input type="text" className="input-name" placeholder="birthdate" />
@@ -34,12 +34,28 @@ const Profile = () => (
   </div>
 )
 
-const ProfileContainer = () => (
+const ProfileContainer = ({user}) => (
   <div className="profile-containner">
-    <Profile />
+    <Profile  user={user}/>
     <Profilepic />
     <Logout />
     <PanelContainer />
   </div>
 )
+
+class profilePage extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      user : { profilename :  "avd"}
+    }
+  }
+  componentWillMount () {}
+  componentDidMount () {}
+
+  render () {
+    return (<ProfileContainer user={this.state.user} />)
+  }
+}
+
 export { ProfileContainer }
