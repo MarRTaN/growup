@@ -15,7 +15,7 @@ const Profile = () => (
   <div>
     <input type="text" className="input-name" placeholder="profilename" />
     <input type="text" className="input-name" placeholder="name" />
-    <input type="text" classe="input-name" placeholder="sex" />
+    <input type="text" className="input-name" placeholder="sex" />
     <input type="text" className="input-name" placeholder="birthdate" />
     <input type="text" className="input-name" placeholder="address" />
     <input type="text" className="input-name" placeholder="phone" />
