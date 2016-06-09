@@ -3,13 +3,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 
-<<<<<<< HEAD
-import { CheckTreePage } from './component/checkTree'
-import { NewUserPage } from './component/newuser' //complete
-=======
+
 import { CheckTreePage } from './component/checktree'
 import { NewUserPage } from './component/newuser' // complete
->>>>>>> 4c99cdb95753d4a158858c328e0b46420e83385f
 import { HomePage } from './component/home'
 import { IntroContainer } from './component/intro'
 import { MarketPage } from './component/market'
