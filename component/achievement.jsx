@@ -3,7 +3,7 @@ require('../public/css/acheive.scss')
 const  setElement = require('../public/js/acheive.js')
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ItemContainer } from './itemlist.jsx'
+import { ItemContainer } from './acheiveitemlist.jsx'
 import { PanelContainer } from './panel.jsx'
 
 const AchievementContainer = ({items}) => (

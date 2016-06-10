@@ -5,10 +5,12 @@ import $ from '../public/js/jquery.js'
 
 const getDetail = (id) => {
   $('#item-detail-'+id).fadeIn(100);
+  $('.fade-black').fadeIn(100);
 }
 
 const close = (id) => {
   $('#item-detail-'+id).fadeOut(50);
+  $('.fade-black').fadeOut(50);
 }
 
 const Item = ({url, name, id}) => (
@@ -19,7 +21,7 @@ const Item = ({url, name, id}) => (
 )
 
 const ItemDetail = ({name, id}) => (
-  <div className="item-show"  id={"item-detail-"+id}>
+  <div className="item-market-show"  id={"item-detail-"+id}>
     <div className="name">{name.split(',')[0]}</div>
     <div className="detail">{name.split(',')[2]}</div>
     <div className="buy-btn">Buy</div>
@@ -28,9 +30,13 @@ const ItemDetail = ({name, id}) => (
 )
 
 const ItemContainer = ({items}) => (
-  <div className="item-container">
-    {items.map((item, i) => (<Item key={i} url={item.url} name={item.name} id={i}/>))}
-    {items.map((item, i) => (<ItemDetail key={i} name={item.name} id={i}/>))}
+  <div className="full-page">
+    <div className="item-container">
+      {items.map((item, i) => (<Item key={i} url={item.url} name={item.name} id={i}/>))}
+      {items.map((item, i) => (<ItemDetail key={i} name={item.name} id={i}/>))}
+    </div>
+    <div className="fade-black"></div>
   </div>
-)
+) 
+
 export { ItemContainer }
