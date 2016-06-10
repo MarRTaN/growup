@@ -43,19 +43,16 @@ class HomePage extends React.Component {
   componentWillMount () {
     const storage = window.localStorage
     const value = storage.getItem('name')
-    // console.log(value)
-    // console.log('will mount')
     this.setState({name: 'example'})
-    // test user is ->  testuser.Abc,Def,Ghi
     if (value.indexOf('testuser.') >= 0) {
       const name = value.split('testuser.')[1]
-      // console.log('name : ', name)
       this.setState({name: name})
-      window.fetch('https://growupapp.firebaseio.com/User.json')
+      this.fetchStream = window.fetch('https://growupapp.firebaseio.com/User.json')
         .then(response => response.json())
         .then(user => {
           user.filter(u => u.username === name)
             .map(u => {
+              console.log(u)
               storage.setItem('data', JSON.stringify(user))
               const lvl = check(u.score)
               this.setState({lvl: lvl.lvl })
@@ -66,7 +63,9 @@ class HomePage extends React.Component {
   componentDidMount () {
     setElement()
   }
-
+  componentWillUnmount () {
+    this.fetchStream.abort()
+  }
   render () {
     return (<HomeContainer name={this.state.name} lvl={this.state.lvl} />)
   }

@@ -1,4 +1,4 @@
-import orderBy from 'lodash/orderBy'
+import orderBy from 'lodash/orderby'
 // import sortedIndex from 'lodash/sortedIndex'
 const rule = [
   {
