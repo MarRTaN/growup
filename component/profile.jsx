@@ -1,6 +1,6 @@
 require('../public/css/profile.scss')
 
-const  setElement = require('../public/js/profile.js')
+const setElement = require('../public/js/profile.js')
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { PanelContainer } from './panel'
@@ -48,7 +48,7 @@ class ProfilePage extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      user : { profilename :  "avd"}
+      user: { profilename: 'avd'}
     }
   }
   componentWillMount () {}

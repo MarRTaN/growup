@@ -24,7 +24,6 @@ class MarketPage extends React.Component {
     fetch('https://growupapp.firebaseio.com/Product.json')
       .then(response => response.json())
       .then(items => {
-        console.log('gettted')
         items = items.map(item => ({url: item.img, name: (item.name + ',' + item.price + ',' + item.description + ',' + item.stock)}))
         this.setState({items})
       })
