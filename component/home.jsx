@@ -64,7 +64,7 @@ class HomePage extends React.Component {
     setElement()
   }
   componentWillUnmount () {
-    this.fetchStream.abort()
+  //    this.fetchStream.abort()
   }
   render () {
     return (<HomeContainer name={this.state.name} lvl={this.state.lvl} />)
