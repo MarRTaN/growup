@@ -38,8 +38,7 @@ function setPlantNameContainer(){
 	$('#plant-name').css({'width':width+"px",
 						  'height':height+"px",
 						  'top': top+"px",
-						  'left': left+"px",
-						  'font-size':fontNumberSize+"px"});
+						  'left': left+"px"});
 }
 
 function setPlantLevelBar(){

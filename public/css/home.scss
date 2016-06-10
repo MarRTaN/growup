@@ -28,15 +28,17 @@ body{
 				height: 20%;
 				width: 100%;
 				padding-top: 10%;
+				font-size: 25px;
 			}
 			.level-number{
-				padding-top: 15%;
+				padding-top: 10%;
 				width: 100%;
-				font-size: 25px;
+				font-size: 20px;
 				height: 80%;
 			}
 		}
 		.plant-name{
+			font-size: 20px;
 			position: absolute;
 			color: white;
 		}
@@ -89,7 +91,6 @@ body{
 	width: 60%;
 	position: absolute;
 	left: 20%;
-	top: 20%;
 }
 .plant-end{display:none;}
 .plant-demo-01-pot0{fill:#EFEFEF;}
