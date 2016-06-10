@@ -10,9 +10,7 @@ const logout = () => {
   browserHistory.push('/newuser')
 }
 const Logout = () => (
-  <button onClick={logout}>
-    logout
-  </button>
+  <div className="logout" onClick={logout}></div>
 )
 const Profilepic = () => (
   <div className="profile-pic">
@@ -24,10 +22,10 @@ const Profilepic = () => (
 )
 
 const Profile = ({user}) => (
-  <div>
+  <div className="profile-form">
     <input type="text" className="input-name" placeholder={'profilename' + user} />
     <input type="text" className="input-name" placeholder="name" />
-    <input type="text" classe="input-name" placeholder="sex" />
+    <input type="text" className="input-name" placeholder="sex" />
     <input type="text" className="input-name" placeholder="birthdate" />
     <input type="text" className="input-name" placeholder="address" />
     <input type="text" className="input-name" placeholder="phone" />

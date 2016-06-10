@@ -7,7 +7,7 @@ import { ItemContainer } from './itemlist.jsx'
 import { PanelContainer } from './panel.jsx'
 
 const AchievementContainer = ({items}) => (
-  <div className="achieve-containner">
+  <div className="acheive-container">
     <ItemContainer items={items} />
     <PanelContainer />
   </div>
