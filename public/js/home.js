@@ -23,8 +23,8 @@ function setLevelContainer(){
 							   'height':height+"px",
 							   'margin-top' : margin + "px",
 							   'margin-left' : margin + "px"});
-	$('#level-number').css({'font-size':fontNumberSize+"px"});
-	$('.level-text').css({'font-size':fontTextSize+"px"});
+	// $('#level-number').css({'font-size':25+"px"});
+	// $('.level-text').css({'font-size':30+"px"});
 }
 
 function setPlantNameContainer(){
