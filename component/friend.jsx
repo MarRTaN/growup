@@ -59,7 +59,12 @@ class FriendPage extends React.Component {
     //    this.fetchStream.abort()
   }
   render () {
-    return (<FriendContainer friends={this.state.friends} />)
+    return (
+      <div className="friend-container">
+        <PanelContainer />
+      </div>
+    )
+    //return (<FriendContainer friends={this.state.friends} />)
   }
 }
 export { FriendPage }
