@@ -43,7 +43,10 @@ class HomePage extends React.Component {
   componentWillMount () {
     const storage = window.localStorage
     const value = storage.getItem('name')
-    this.setState({name: 'example'})
+    if(value == null) {
+      return 
+    }
+    // this.setState({name: 'example'})
     if (value.indexOf('testuser.') >= 0) {
       const name = value.split('testuser.')[1]
       this.setState({name: name})

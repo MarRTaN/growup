@@ -13,7 +13,7 @@ import { ScanQRContainer } from './component/scanqr'
 import { NewtreeAnimationContainer } from './component/newtreeanimation'
 import { AchievementPage } from './component/achievement'
 import { AchievementItemPage } from './component/achievementitem'
-import { FriendContainer } from './component/friend'
+import { FriendPage } from './component/friend'
 import { ProfilePage } from './component/profile'
 import { TreeProfileContainer } from './component/treeprofile'
 import { NewDiaryAddedContainer } from './component/newdiaryadded'
@@ -35,7 +35,7 @@ ReactDOM.render((
     <Route path="/newtreeanimation" component={NewtreeAnimationContainer} />
     <Route path="/achievement" component={AchievementPage} />
     <Route path="/achievements" component={AchievementItemPage} />
-    <Route path="/friend" component={FriendContainer} />
+    <Route path="/friend" component={FriendPage} />
     <Route path="/profile" component={ProfilePage} />
     <Route path="/treeprofile" component={TreeProfileContainer} />
     <Route path="/newdiaryadded" component={NewDiaryAddedContainer} />
